@@ -485,6 +485,62 @@ body.dark button.fancyButton:before{
 .ra.forum-root-2:before,
 .ra-d6:before {
     content: "\\eaa2";
+},
+// island style
+island:`
+.headerbar:before,
+.headerbar:after,
+.fancyButton.hbDark:after,
+.fancyButton.hbDark:before,
+.headerbar.hbDark:after,
+.headerbar.hbDark:before {
+    background-color:#2F4FDE;
+}
+
+h1.headerbar, h2.headerbar, h3.headerbar, h4.headerbar{
+    background: radial-gradient(circle at bottom, #01959F, #013135);
+    font-weight:normal;
+    color:#2F4FDE;
+    text-shadow:0 0 5px #fff;
+}
+
+div.headerbar{
+    background: radial-gradient(circle at bottom, #01959F, #013135);
+}
+
+.fancyButton:after, .headerbar:after {
+    clip-path: polygon(0% 0%,0% 100%,50% 100%,100% 50%,100% 0%);
+}
+
+.fancyButton:before, .headerbar:before {
+    clip-path: polygon(100% 100%,0% 100%,0% 50%,50% 0%,100% 0%);
+}
+
+button.fancyButton,
+button.fancyButton:active,
+button.fancyButton:visited,
+a.fancyButton,
+a.fancyButton:active,
+a.fancyButton:visited,
+.trapezoid.redTrapezoid,
+.breadcrumbs,
+#breadcrumbs,
+#page_forum_thread .postHeader .subject,
+.postNames,
+.rollForChar{
+    font-family: Neuropol;
+}
+
+#page_forum_thread .postContent{
+    border-radius:0;
+    box-shadow:0 0 8px #01959F;
+}
+
+.customChar .abilityNotes.notes{
+    background: radial-gradient(circle at bottom, #01959F, #013135);
+    color:#02F9FF;
+    border-radius:0;
+    border-color:#01959F;
 }
 
 `
